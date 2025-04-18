@@ -593,18 +593,20 @@ namespace tools
           std::string && loc
         , sources_t const & sources
         , destinations_t const & destinations
+        , uint64_t unlock_time
         , cryptonote::network_type nettype
         )
         : transfer_error(std::move(loc), "transaction was not constructed")
         , m_sources(sources)
         , m_destinations(destinations)
+        , m_unlock_time(unlock_time)
         , m_nettype(nettype)
       {
       }
 
       const sources_t& sources() const { return m_sources; }
       const destinations_t& destinations() const { return m_destinations; }
-
+      uint64_t unlock_time() const { return m_unlock_time; }
       std::string to_string() const
       {
         std::ostringstream ss;
@@ -641,6 +643,7 @@ namespace tools
     private:
       sources_t m_sources;
       destinations_t m_destinations;
+      uint64_t m_unlock_time;
       cryptonote::network_type m_nettype;
     };
     //----------------------------------------------------------------------------------------------------
@@ -780,14 +783,6 @@ namespace tools
       explicit subtract_fee_from_bad_index(std::string&& loc, long bad_index)
         : transfer_error(std::move(loc),
           "subtractfeefrom: bad index: " + std::to_string(bad_index) + " (indexes are 0-based)")
-      {
-      }
-    };
-    //----------------------------------------------------------------------------------------------------
-    struct nonzero_unlock_time : public transfer_error
-    {
-      explicit nonzero_unlock_time(std::string&& loc)
-        : transfer_error(std::move(loc), "transaction cannot have non-zero unlock time")
       {
       }
     };

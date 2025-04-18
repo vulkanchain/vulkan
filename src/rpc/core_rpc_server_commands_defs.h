@@ -640,7 +640,6 @@ namespace cryptonote
       bool too_few_outputs;
       bool sanity_check_failed;
       bool tx_extra_too_big;
-      bool nonzero_unlock_time;
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE_PARENT(rpc_access_response_base)
@@ -656,7 +655,6 @@ namespace cryptonote
         KV_SERIALIZE(too_few_outputs)
         KV_SERIALIZE(sanity_check_failed)
         KV_SERIALIZE(tx_extra_too_big)
-        KV_SERIALIZE(nonzero_unlock_time)
       END_KV_SERIALIZE_MAP()
     };
     typedef epee::misc_utils::struct_init<response_t> response;
