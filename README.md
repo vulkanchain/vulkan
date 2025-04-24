@@ -1,4 +1,4 @@
-# Vulkan Chain 0.1.0.0 - Volcanic Velvet
+# Vulkan Chain 0.1.0.1 - Valiant Vanadium
 
 Copyright (c) 2024, Vulkan Chain
 
