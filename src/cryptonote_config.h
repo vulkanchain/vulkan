@@ -168,6 +168,7 @@
 
 #define THREAD_STACK_SIZE                       5 * 1024 * 1024
 
+#define HF_TX_FACTOR                            1.725
 #define HF_VERSION_ENABLE_N_OUTS                2
 #define HF_VERSION_REJECT_SIGS_IN_COINBASE      1
 #define HF_VERSION_CLSAG                        1
