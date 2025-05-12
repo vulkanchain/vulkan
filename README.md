@@ -1,4 +1,4 @@
-# Vulkan Chain 0.1.0.1 - Valiant Vanadium
+# Vulkan Chain 0.1.0.2 - Vital Venera
 
 Copyright (c) 2024-2025, Vulkan Chain
 
@@ -27,7 +27,7 @@ Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Introduction
 
-Vulkan is a private, decentralized, untraceable cryptocurrency forked from the codebase of Monero, commited to adapting to the current market conditions and regulations.
+Vulkan is a private, decentralized, untraceable cryptocurrency with a transparent team fund, born to fulfill a unique role in the DeFi space.
 
 Vulkan in junction with VectorSwap will host the first overcollateralized stablecoin (USDV). USDV is not private by default since it will exist on the Ethereum and BNB ERC20/BSC20 blockchains. USDV is meant to be anonymized to a degree by implementing transaction mixing powered by the VectorPay browser extension wallet.
 
